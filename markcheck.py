@@ -1,5 +1,5 @@
 import streamlit as st
-y = 50
+y = 85
 st.header("Mark Checking Demo")
 
 
@@ -35,4 +35,4 @@ try:
 
             
 except ValueError:
-    st.write("\nThis is not a number, kindly enter a number.\n")
+    st.write("\nKindly enter a number.\n")
