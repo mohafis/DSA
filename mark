@@ -20,5 +20,5 @@ while True:
             		else:
 		                print("\nUnfortunately, you did not pass your exam. Work harder. You can make it.\n")
 
-	except ValueError:
-		print("\nPlease enter a number.\n")
+		except ValueError:
+			print("\nPlease enter a number.\n")
