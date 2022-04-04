@@ -18,7 +18,7 @@ if readme:
 
 st.write("Key in your mark. Enter x to stop the algorithm.\n\n")
          
-mark = st.text_input('Enter the mark here (0 to 100', 'xx')
+mark = st.text_input('Enter the mark here (0 to 100)', '***')
          
          
 try:
