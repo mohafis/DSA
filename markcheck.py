@@ -8,24 +8,24 @@ readme = st.checkbox("readme")
 if readme:
 
     st.write("""
-        This is a mark checking demo. You may get the codes via [github](https://github.com/richieyuyongpoh/markchecking)
+        This is a trial for mark checking. You may get the codes via [github](https://github.com/mohafis/DSA/blob/main/markcheck.py)
         """)
 
     st.write ("For more info, please contact:")
 
-    st.write("[Dr. Yong Poh Yu](https://www.linkedin.com/in/yong-poh-yu/)")
+    st.write("[Mohd Hafizzudin Ismail](https://www.linkedin.com/in/mohd-hafizzudin-ismail-92b15274/)")
     
 
-st.write("Please enter your mark. To stop the algorithm, enter x .\n\n")
+st.write("Key in your mark. Enter x to stop the algorithm.\n\n")
          
-mark = st.text_input('Enter the mark here', '50')
+mark = st.text_input('Enter the mark here (0 to 100', 'xx')
          
          
 try:
     val = float(mark)
             
     if (val > 100 or val < 0):
-        st.write("\nPlease enter a valid mark.\n")
+        st.write("\nThis mark is not valid, please re-enter a valid mark.\n")
                 
     elif val >= y:
         st.write("\nYou passed your exam. Keep it up!\n")
@@ -35,4 +35,4 @@ try:
 
             
 except ValueError:
-    st.write("\nPlease enter a number.\n")
+    st.write("\nThis is not a number, kindly enter a number.\n")
